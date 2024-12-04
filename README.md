@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Drag Drop Next App
 
-## Getting Started
+This project is a Next.js application that supports drag-and-drop functionality to upload files to Wasabi (or any compatible cloud storage service). It provides a seamless interface for users to upload files with progress tracking.
 
-First, run the development server:
+## Features 🥇
+
+- Drag and drop files for easy uploads.
+- Real-time upload progress.
+- Integration with Wasabi cloud storage (or other cloud storage services that support S3-compatible APIs).
+
+## Setup Instructions
+
+Follow these steps to set up the project locally.
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Usanaee/drag-drop-next-app.git
+cd drag-drop-next-app
+```
+
+## Installation
+
+Install the required dependencies for the project:
+
+```bash
+npm install
+```
+    
+##  Set Environment Varibles
+
+```bash
+AWS_BUCKET_NAME=your-bucket-name
+AWS_REGION=your-region
+AWS_ACCESS_KEY_ID=your-access-key-id
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
+WASABI_ENDPOINT_URL=your-wasabi-endpoint-url
+```
+
+
+
+
+## Additional dependencies
+
+```bash
+npm install axios react-dropzone react-toastify @aws-sdk/client-s3
+
+```
+
+
+## Start the server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Authors
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Repository Made By [@Usama Naeem](https://github.com/Usanaee)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
